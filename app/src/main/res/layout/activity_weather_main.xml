@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.weather.WeatherActivity">
+
+
+           <!-- <LinearLayout
+                android:id="@+id/activityMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+-->
+              <!--  <com.google.android.material.appbar.AppBarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:elevation="5dp">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        style="@style/Toolbar"
+                        app:subtitleTextColor="@color/white"
+                        app:title="@string/app_name"
+                        app:titleTextAppearance="@style/Toolbar.TitleText"
+                        app:titleTextColor="@color/white" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/light_gray" />
+
+                </com.google.android.material.appbar.AppBarLayout>
+-->
+                <fragment
+                    android:name="androidx.navigation.fragment.NavHostFragment"
+                    app:navGraph="@navigation/weather"
+                    app:defaultNavHost="true"
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            <!--</LinearLayout>-->
+
+
+
+
+</FrameLayout>
